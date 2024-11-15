@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - Aadhithan Engineering Company</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <style>
+        /* Ensure the map starts below the navbar */
+        #map {
+            width: 100%;
+            height: calc(100vh - 70px); /* Full height minus the height of the navbar */
+        }
+
+        /* Static navbar styling */
+        nav {
+            position: static;
+            z-index: 1000;
+        }
+
+        /* Custom styling for logo and company name */
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        /* Styling the navbar brand and link */
+        .navbar-brand {
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Align items horizontally without wrapping */
+        .navbar-nav {
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            flex-wrap: nowrap; /* Prevent wrapping of items */
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: white !important;
+            padding: 0.25rem 0.75rem; /* Reduce padding to save space */
+            text-transform: uppercase;
+            font-size: 0.9rem; /* Shrink font size slightly */
+        }
+
+        /* Change color of nav-links on hover */
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #FFD700 !important; /* Gold hover color */
+        }
+
+        /* Styling for active nav item */
+        .navbar-nav .nav-item.active .nav-link {
+            font-weight: bold;
+            color: #FFD700 !important; /* Active item color */
+        }
+
+        /* Remove margins and paddings on body and html */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Static Navigation Bar with Bootstrap styling -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 shadow-sm">
+        <div class="container-fluid"> <!-- Changed to container-fluid for full width -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html#home">
+                <img src="Images/company_logo.jpg" alt="Company Logo">
+                Aadhithan Engineering Company
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navbar items displayed horizontally -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#manufacturing">Manufacturing & Materials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#machineries">List of Machineries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#parts">Manufactured Parts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#partners">Trusted Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#milestones">Our Milestones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AADITHAN ENGINEERING COMPANY brochure.pdf" target="_blank">Brochure</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Page Google Map under the navbar -->
+    <div id="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.2780856416994!2d80.20227287484222!3d13.017955087301681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52673c0e408b23%3A0x4fd9ae4b987dd29c!2sAadhithan%20Engineering%20Company!5e0!3m2!1sen!2sin!4v1728125767339!5m2!1sen!2sin"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+</body>
+</html>
